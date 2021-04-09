@@ -1,0 +1,5 @@
+---
+- name: start up the mysql service
+  shell: "service mariadb start"
+- name: ensure mysql is enabled to run on startup
+  service: name=mariadb state=started enabled=true

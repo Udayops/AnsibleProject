@@ -1,0 +1,6 @@
+---
+  - name: install python & pip
+    apt: name="{{ item }}" state=latest
+    loop:
+      - python3
+      - python3-pip

@@ -1,0 +1,5 @@
+---
+  - name: disable pmp_event on apache
+    shell: "a2dismod mpm_event"
+    notify:
+    - restart apache2

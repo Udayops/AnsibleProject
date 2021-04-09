@@ -1,0 +1,7 @@
+---
+  - name: add in a test directory
+    file: path=/var/www/test/ state=directory
+  - name: add in your index file
+    copy: src=index.py dest=/var/www/test/index.py mode=755
+    notify:
+    - restart apache2

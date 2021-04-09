@@ -1,0 +1,9 @@
+---
+# vars file for /etc/ansible/roles/FirstProject
+
+mysql_root_password: password
+web1_ip: 3.135.246.107
+web2_ip: 18.189.185.30
+web1_pip: 172.31.0.120
+web2_pip: 172.31.2.237
+

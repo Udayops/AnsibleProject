@@ -1,0 +1,4 @@
+---
+- name: Bind address change to 0.0.0.0
+  shell: sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf
+  notify: restart_db

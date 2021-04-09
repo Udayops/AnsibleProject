@@ -1,0 +1,11 @@
+---
+# Task file for web_server.yaml
+- import_tasks: upgradepatches.yaml
+- import_tasks: installpython.yaml
+- import_tasks: writeapache.yaml
+- import_tasks: runapache.yaml
+- import_tasks: disablepmp.yaml
+- import_tasks: enablecgi.yaml
+- import_tasks: installpymysql.yaml
+- import_tasks: addpath.yaml
+

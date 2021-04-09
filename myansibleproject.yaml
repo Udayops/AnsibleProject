@@ -1,0 +1,9 @@
+---
+- hosts: db
+  become: yes
+  roles: 
+  - db_server
+- hosts: web
+  become: yes
+  roles:  
+  - web_server  

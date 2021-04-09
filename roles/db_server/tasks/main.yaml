@@ -1,0 +1,7 @@
+---
+# Task filr for db_server.yaml
+- import_tasks: installmysql.yaml
+- import_tasks: bindaddrchg.yaml
+- import_tasks: startmysql.yaml
+- import_tasks: Updatepass.yaml
+- import_tasks: createdb.yaml  
